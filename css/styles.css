@@ -105,3 +105,11 @@ nav li:hover{
     transition: 0.6s;
 }
 
+nav a{
+    text-decoration: none;
+
+}
+
+nav a:visited{
+    color: #3E606F;
+}
