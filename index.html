@@ -9,35 +9,76 @@
     <script src="https://kit.fontawesome.com/4c9b83c58e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
 </head>
 
 <body>
+    <!-- The nav bar -->
     <nav>
         <ul>
-            <li><a href="#" id = "home">Home</a></li>
-            <li><a href="#"id ="gallery">Gallery</a></li>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="gallery">Gallery</a></li>
         </ul>
     </nav>
 
+
+
+    <!-- The actual menu -->
     <div class="container" id="container">
 
         <a href="https://github.com/talalOthman?tab=repositories">
-            <p >PROJECTS</p>
+            <p>PROJECTS</p>
         </a>
 
         <a href="Resume.pdf">
-            <p >RESUME</p>
+            <p>RESUME</p>
         </a>
     </div>
+    
+    <!-- SLIDER -->
+    <div class="slider-container" id="slider-container">
+    <!-- Slider main container -->
+    <div class="swiper-container" id="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper" id="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images/Talal1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/Talal2.jpeg" alt=""></div>
+            <div class="swiper-slide"><img src="images/Talal3.jpeg" alt=""></div>
+            
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        
+    </div>
+</div>
+    <!-- END OF SLIDER -->
+
+
+
+    <!-- The footer of the page -->
     <footer>
         <a href="https://www.facebook.com/talal.othman.31"><i class="fab fa-facebook"></i></a>
         <a href="https://www.instagram.com/talal2820/"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/talalOthman"><i class="fab fa-github"></i>
+        <a href="https://github.com/talalOthman"><i class="fab fa-github"></i></a>
             <p>Talal Othman @ 2020</p>
     </footer>
+    <!--My custom script-->
     <script src="javascript/myscripts.js"></script>
+
+    <!--Slider script-->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
 </body>
 
 </html>

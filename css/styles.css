@@ -116,4 +116,36 @@ nav a:visited{
     color: #3E606F;
 }
 
+#swiper-container{
+    height: 35rem;
+    width: 32.6rem;
+    visibility: hidden;
+    transition: 0.5s;
+    border: 0px solid red;
+    margin: 0; 
+    top: 0;  
+}
+
+#swiper-wrapper{
+    transition: 0.5;
+}
+
+.slider-container{
+    border: 0px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3rem;
+    left: 30.2rem;
+    visibility: hidden;
+    
+    
+}
+
+img{
+    height: 32rem;
+    width: 34rem;
+}
+
 
