@@ -16,6 +16,8 @@
     border: 0px solid red;
     /* to make left and right sides near each other */
     margin: 11rem 20rem;
+    transition: 0.5s;
+    
 }
 
 .container a{ 
@@ -43,7 +45,7 @@
      margin-right: 20px;
      font-size: 30px;
      color: #193441;
-     /*#EFF4F48*/
+     
  }
 
  footer i:hover{
@@ -113,3 +115,5 @@ nav a{
 nav a:visited{
     color: #3E606F;
 }
+
+
