@@ -255,7 +255,20 @@ img{
         height: 30rem;
     }
 }
-})
+
+@media (max-height: 660px){
+    #swiper-container{
+        height: 30rem;
+    }
+
+    img{
+        height: 28rem;
+    }
+
+}
+
+
+
 
 
 
