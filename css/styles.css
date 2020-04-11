@@ -233,7 +233,17 @@ img{
         width: 56.4rem;
     }
 
+}
 
+/* OMAR'S SPECIAL */
+@media (max-height: 750px ){
+    #swiper-container{
+        height: 35rem;
+    }
+
+    img{
+        height: 33rem;
+    }
 }
 
 
