@@ -149,3 +149,30 @@ img{
 }
 
 
+/* MEDIA SECTION */
+
+
+/* 1366 x 768 screen */
+@media all and (max-width: 1366px){
+    #slider-container{
+        left: 25rem;
+        
+    }
+    #swiper-container{
+        height: 37rem;
+    }
+
+    img{
+        height: 35rem;
+    }
+
+    nav ul{
+        margin-left: 24.8rem;
+        margin-right: 24.65rem;
+    }
+}
+
+
+
+
+
