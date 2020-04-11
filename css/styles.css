@@ -245,6 +245,17 @@ img{
         height: 33rem;
     }
 }
+/*SPECIAL*/
+@media (max-height: 700px){
+    #swiper-container{
+        height: 32rem;
+    }
+
+    img{
+        height: 30rem;
+    }
+}
+})
 
 
 
