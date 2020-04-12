@@ -267,6 +267,45 @@ img{
 
 }
 
+/* 1280 x 800 */
+@media (max-width: 1280px){
+    #slider-container{
+        left: 23rem;
+        
+    }
+    #swiper-container{
+        height: 37rem;
+        
+    }
+
+    img{
+        height: 35rem;
+    }
+
+    nav ul{
+        margin-left: 22.8rem;
+        margin-right: 20.7rem;
+    }
+
+    
+}
+/* 1280 x 600 */
+@media (max-width: 1280px) and (max-height: 600px){
+    #slider-container{
+        left: 23rem;
+        
+    }
+    #swiper-container{
+        height: 24rem;
+        width: 33rem;
+    }
+
+    img{
+        height: 24rem;
+        width: 33rem;
+    }
+}
+
 
 
 
