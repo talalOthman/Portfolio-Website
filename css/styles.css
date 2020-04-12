@@ -315,8 +315,8 @@ img{
     }
     
     #swiper-container{
-        height: 31rem;
-        width: 23.1rem;
+        height: 30.5rem;
+        width: 23rem;
         
         border: 0px solid red;
     }
@@ -360,13 +360,27 @@ img{
         margin-top: 2rem;
         margin-right: 5rem;
         margin-left: 5rem;
+        
         border: 0px solid red;
     }
     
     .container a{
         margin-bottom: 1.5rem;
     }
+
+    body{
+        position: relative;
+        border: 2px solid;
+    }
     
+    footer{
+        position: absolute;
+        height: 100px;
+    }
+
+    footer p{
+        
+    }
 }
 
 
