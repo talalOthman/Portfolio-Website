@@ -323,7 +323,7 @@ img{
     #slider-container{
         top: 2rem;
         left: 0px;
-        border: 0px solid blue;
+        border: 1px solid blue;
     }
 
     img{
@@ -385,6 +385,79 @@ img{
 }
 
 
+@media (max-width: 375px) and (max-width: 630px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #swiper-container{
+        height: 29.5rem;
+        width: 23.4rem;
+        border: 0px solid red;
+    }
+    
+    #slider-container{
+        top: 2rem;
+        left: 0px;
+        border: 0px solid blue;
+    }
+
+    img{
+        width: 24rem;
+        height: 28rem;
+    }
+
+    nav {
+        padding: 0;
+        
+    }
+
+    nav a{
+        padding: 0;
+        margin: 0;
+        border: 0px solid green;
+        margin-left: -2rem;
+        
+    }
+
+    nav ul{
+        margin: 0;
+        margin-top: 0rem;
+        padding-top: 0rem;
+        margin-left: 2rem;
+        
+        
+       
+
+    }
+
+    .container{
+        display: block;
+        margin-top: 2rem;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        margin-bottom: 0;
+        
+        border: 0px solid red;
+    }
+    
+    .container a{
+        margin-bottom: 1.5rem;
+    }
+
+    body{
+        position: relative;
+        margin-top: 1rem;
+        
+        
+    }
+    
+    footer{
+        position: fixed;
+        height: 100px;
+    }
+}
 
 
 
