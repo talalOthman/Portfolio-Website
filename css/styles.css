@@ -315,15 +315,15 @@ img{
     }
     
     #swiper-container{
-        height: 30.5rem;
+        height: 31.5rem;
         width: 23.4rem;
         border: 0px solid red;
     }
     
     #slider-container{
-        top: 4rem;
+        top: 2rem;
         left: 0px;
-        border: 0px solid blue;
+        border: 1px solid blue;
     }
 
     img{
