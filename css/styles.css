@@ -455,7 +455,7 @@ img{
 }
 
 /* iphone 6/7/8 PLUS */
-@media (min-width: 414px){
+@media (max-width: 414px) and (min-height: 736px){
     body{
         margin: 0;
         padding: 0;
