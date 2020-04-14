@@ -126,9 +126,8 @@ nav a:visited{
     top: 0;  
 }
 
-#swiper-wrapper{
-    transition: 0.5;
-}
+
+
 
 .slider-container{
     border: 0px solid blue;
@@ -139,7 +138,7 @@ nav a:visited{
     top: 3rem;
     left: 30.2rem;
     visibility: hidden;
-    
+    transition: 0.5s;
     
 }
 
