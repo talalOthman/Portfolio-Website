@@ -535,6 +535,89 @@ img{
         font-size: 35px;
     }
 }
+ /* IPAD screen */
+@media  (max-width: 768px) and (min-height: 1024px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #swiper-container{
+        height: 54.5rem;
+        width: 48.1rem;
+        border: 0px solid red;
+    }
+    
+    #slider-container{
+        top: 2.5rem;
+        left: 0px;
+        border: 0px solid blue;
+    }
+
+    img{
+        width: 48.9rem;
+        height: 52rem;
+    }
+
+    nav {
+        padding: 0;
+        
+    }
+
+    nav a{
+        padding: 0;
+        margin: 0;
+        border: 0px solid green;
+        margin-left: -2rem;
+        font-size: 25px;
+        
+    }
+
+    nav ul{
+        margin: 0;
+        margin-top: 0rem;
+        padding-top: 0rem;
+        margin-left: 2rem;
+
+    }
+
+    .container{
+        display: block;
+        margin-top: 4rem;
+        margin-right: 5rem;
+        margin-left: 13rem;
+        margin-bottom: 0;
+        
+        border: 0px solid red;
+    }
+    
+    .container a{
+        margin-bottom: 1.5rem;
+        height: 350px;
+        width: 350px;
+
+    }
+
+    .container p{
+        font-size: 55px;
+    }
+
+    body{
+        position: relative;
+        margin-top: 1rem;
+        
+    }
+    
+    footer{
+        position: fixed;
+        height: 100px;
+    }
+
+    footer i{
+        margin-top: 1rem;
+        font-size: 35px;
+    }
+}
 
 
 
