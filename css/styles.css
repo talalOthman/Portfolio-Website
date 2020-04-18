@@ -4,7 +4,7 @@
 }
 
 .container p{
-    font-size: 35px;
+    font-size: 45px;
     color: #3E606F;
     
 }
@@ -15,6 +15,7 @@
     justify-content: space-evenly;
     border: 0px solid red;
     margin: 11rem 20rem;
+    margin-top: 8rem;
     transition: 0.5s;
     
 }
@@ -23,8 +24,8 @@
     text-decoration: none;
     border-radius: 15%;
     background-color: #EFF4F4;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border: 2px solid grey;
     display: flex;
     justify-content: center;
