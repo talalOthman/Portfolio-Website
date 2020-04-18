@@ -1,4 +1,4 @@
-// HTML ELEMENTS PRACTICE
+/* HTML ELEMENTS PRACTICE
 
 let nav = document.createElement('nav');
 let ul = document.createElement('ul');
@@ -16,6 +16,9 @@ const swiperContainer = document.getElementById('swiper-container');
 
 aHome.innerText = "Home";
 aGallery.innerText = "Gallery";
+aHome.style.color = "#193441";
+aGallery.style.color = "#193441";
+
 
 nav.appendChild(ul);
 
@@ -107,6 +110,7 @@ aResume.appendChild(pResume);
 
 document.body.appendChild(div);
 
+*/
 
 
 
@@ -116,14 +120,20 @@ document.body.appendChild(div);
 
 
 
-/*
 
 const swiperContainer = document.getElementById('swiper-container');
 const container = document.getElementById('container');
 
 //when we click gallery
-document.getElementById('gallery').onclick = function(){
+let gallery = document.getElementById('gallery');
+let sGallery = document.getElementById('sGallery');
+sGallery.style.transition = "0.5s";
+gallery.addEventListener('click', function(e){
 
+  sGallery.style.fontWeight = "1000";
+  sHome.style.fontWeight = "10";
+  
+  e.preventDefault();
 
   var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
@@ -158,7 +168,7 @@ document.getElementById('gallery').onclick = function(){
     swiperContainer.style.opacity = "1";
     swiperContainer.style.visibility = "visible";
     
-  }
+  });
 
   
 
@@ -169,16 +179,24 @@ document.getElementById('gallery').onclick = function(){
 
 
 // when we click home
-document.getElementById('home').onclick = function (){
+let home = document.getElementById('home');
+let sHome = document.getElementById('sHome');
+sHome.style.transition = "0.6s";
+home.addEventListener('click' , function (e){
+
+
+  e.preventDefault();
     container.style.opacity = "1";
     container.style.visibility = "visible";
 
     swiperContainer.style.opacity = "0";
     swiperContainer.style.visibility = "hidden";
    
-    
-}
+    sHome.style.fontWeight = "1000";
+    sGallery.style.fontWeight = "10";
+});
 
-*/
+
+
 
 

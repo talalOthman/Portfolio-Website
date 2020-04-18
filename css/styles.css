@@ -14,7 +14,6 @@
     flex-direction: row-reverse;
     justify-content: space-evenly;
     border: 0px solid red;
-    /* to make left and right sides near each other */
     margin: 11rem 20rem;
     transition: 0.5s;
     
@@ -40,7 +39,7 @@
 
 
  footer i{
-     margin-top: 30px;
+     margin-top: 30px; 
      margin-left: 20px;
      margin-right: 20px;
      font-size: 30px;
@@ -81,29 +80,45 @@ body{
     background-color: #EFF4F4;
 }
 
-nav{
-    margin-right: 3rem;
-}
+
 
 nav ul{
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid grey;
-    margin: 1rem 30rem 0 30rem;
-    padding-bottom: 0.5rem;
-
+    border: 0px solid grey;
+    margin: 0 40rem;
+    padding: 0;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    background-color:  #3E606F;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
-nav li{
+
+span{
+    color: #193441;
+    font-weight: 10;
+    transition: 0.5s;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 20px;
+}
+
+span:hover{
+    color: #EFF4F4;
+    transition: 0.5s;
+}
+
+nav li {
+    border: 0px solid red;
     list-style-type: none;
-    margin: 0 3rem;
+    margin: 1rem 2rem;
     color: #3E606F;
     transition: 0.6s;
+    
+    
 }
 
 nav li:hover{
-    text-shadow:
-    0 1px 0px #193441,
-    1px 0 0px #193441;
+    color: #EFF4F4;
     transition: 0.6s;
 }
 
@@ -117,8 +132,8 @@ nav a:visited{
 }
 
 #swiper-container{
-    height: 35rem;
-    width: 32.6rem;
+    height: 33rem !important;
+    width: 34.9rem;
     visibility: hidden;
     transition: 0.5s;
     border: 0px solid red;
@@ -135,7 +150,7 @@ nav a:visited{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 3rem;
+    top: 5rem;
     left: 30.2rem;
     visibility: hidden;
     transition: 0.5s;
@@ -143,8 +158,8 @@ nav a:visited{
 }
 
 img{
-    height: 32rem;
-    width: 34rem;
+    height: 31.5rem !important;
+    width: 34.9em;
 }
 
 
@@ -257,7 +272,7 @@ img{
 
 @media (max-height: 660px){
     #swiper-container{
-        height: 30rem;
+        height: 31rem;
     }
 
     img{
