@@ -1,5 +1,5 @@
 *{
-    font-family: 'Special Elite', cursive;
+    font-family: 'Baloo Bhaina 2', cursive;
     font-weight: bold;
 }
 
@@ -71,7 +71,7 @@
 
 footer p{
     color: #EFF4F4;
-    margin-top: 25px;
+    margin-top: 10px;
     align-self: flex-end;
 }
 
@@ -101,7 +101,6 @@ span{
     color: #193441;
     font-weight: 10;
     transition: 0.5s;
-    font-family: 'Baloo Bhaina 2', cursive;
     font-size: 20px;
 }
 
