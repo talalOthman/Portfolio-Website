@@ -54,6 +54,16 @@
      transition: 0.5s;
  }
 
+ .changed{
+     color: #1162B8;
+     transition: 0.5s;
+ }
+
+ .changed:hover{
+     color: #EFF4F4;
+     transition: 0.5s;
+ }
+
 
  footer{
     background-color: #3E606F;
