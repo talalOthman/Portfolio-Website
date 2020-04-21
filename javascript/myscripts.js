@@ -1,9 +1,11 @@
+const background = document.getElementById('background');
 const navbar = document.getElementById('navbar');
 const footer = document.getElementById('footer');
 const footerIcons = document.getElementsByClassName('fab');
 const swiperContainer = document.getElementById('swiper-container');
 const container = document.getElementById('container');
 
+background.style.transition = "0.5s";
 footer.style.transition = "0.5s";
 navbar.style.transition = "0.5s";
 //when we click gallery
@@ -14,7 +16,7 @@ gallery.addEventListener('click', function(e){
 
   sGallery.style.fontWeight = "1000";
   sHome.style.fontWeight = "10";
-  
+  background.style.backgroundImage = "url(../images/GalleryFinal.jpeg)";
   e.preventDefault();
 
   footer.style.backgroundColor = "#037AFB";
@@ -74,7 +76,7 @@ home.addEventListener('click' , function (e){
 
   footer.style.backgroundColor = "#3E606F";
   navbar.style.backgroundColor = "#3E606F";
-
+  background.style.backgroundImage = "url(../images/HomeFinal.jpeg)";
 
   e.preventDefault();
     container.style.opacity = "1";
