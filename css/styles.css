@@ -54,16 +54,6 @@
      transition: 0.5s;
  }
 
- .changed{
-     color: #1162B8;
-     transition: 0.5s;
- }
-
- .changed:hover{
-     color: #EFF4F4;
-     transition: 0.5s;
- }
-
 
  footer{
     background-color: #3E606F;
@@ -99,7 +89,7 @@ nav ul{
     display: flex;
     justify-content: center;
     border: 0px solid grey;
-    margin: 0 40rem;
+    margin: 0 29rem;
     padding: 0;
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
@@ -163,7 +153,7 @@ nav a:visited{
     align-items: center;
     position: absolute;
     top: 5rem;
-    left: 30.2rem;
+    left: 30.5rem;
     visibility: hidden;
     transition: 0.5s;
     
