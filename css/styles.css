@@ -20,13 +20,13 @@
     
 }
 
+
 .container a{ 
     text-decoration: none;
     border-radius: 15%;
     background-color: #7d898e;
     height: 250px;
     width: 250px;
-    border: 2px solid grey;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,6 +57,7 @@
  footer i:hover{
      color: #EFF4F4;
      transition: 0.5s;
+     text-shadow: 0 0 15px rgba(253, 253, 253, 0.75), 0 0 10px rgba(253, 253, 253, 0.75);
  }
 
 
@@ -110,10 +111,12 @@ span{
     font-weight: 10;
     transition: 0.5s;
     font-size: 20px;
+    
 }
 
 span:hover{
     color: #EFF4F4;
+    text-shadow: 0 0 15px rgba(253, 253, 253, 0.75), 0 0 10px rgba(253, 253, 253, 0.75);
     transition: 0.5s;
 }
 
