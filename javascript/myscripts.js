@@ -16,7 +16,7 @@ gallery.addEventListener('click', function(e){
 
   sGallery.style.fontWeight = "1000";
   sHome.style.fontWeight = "10";
-  background.style.backgroundImage = "url(../images/GalleryFinal.jpeg)";
+  background.style.backgroundColor = "#0356fb";
   e.preventDefault();
 
   footer.style.backgroundColor = "#037AFB";
@@ -76,7 +76,7 @@ home.addEventListener('click' , function (e){
 
   footer.style.backgroundColor = "#3E606F";
   navbar.style.backgroundColor = "#3E606F";
-  background.style.backgroundImage = "url(../images/HomeFinal.jpeg)";
+  background.style.backgroundColor = "#304f5c";
 
   e.preventDefault();
     container.style.opacity = "1";

@@ -62,6 +62,7 @@
 
  footer{
     background-color: #3E606F;
+
     height: 110px;
     border: 0px solid green;
     position: fixed;
@@ -86,8 +87,8 @@ footer p{
 body{
     margin: 0;
     padding: 0;
-    background-color: #EFF4F4;
-    background-image: url(../images/HomeFinal.jpeg);
+    background-color: rgb(48, 79, 92);
+    transition: 0.5s;
 }
 
 
