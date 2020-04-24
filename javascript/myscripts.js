@@ -16,7 +16,7 @@ gallery.addEventListener('click', function(e){
 
   sGallery.style.fontWeight = "1000";
   sHome.style.fontWeight = "10";
-  background.style.backgroundColor = "#0356fb";
+  background.style.backgroundColor = "#0373fb";
   e.preventDefault();
 
   footer.style.backgroundColor = "#037AFB";
