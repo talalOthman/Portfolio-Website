@@ -26,17 +26,12 @@ gallery.addEventListener('click', function(e){
 
 
   var swiper = new Swiper('.swiper-container', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows : true,
-    },
+    spaceBetween: 30,
+      effect: 'fade',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
   
     // Navigation arrows
   navigation: {
@@ -49,6 +44,13 @@ gallery.addEventListener('click', function(e){
       dynamicBullets: true, 
       
     },
+    loop: true,
+
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
   });
 
    container.style.opacity = "0";
@@ -73,6 +75,7 @@ let home = document.getElementById('home');
 let sHome = document.getElementById('sHome');
 sHome.style.transition = "0.6s";
 home.addEventListener('click' , function (e){
+
 
   footer.style.backgroundColor = "#3E606F";
   navbar.style.backgroundColor = "#3E606F";

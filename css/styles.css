@@ -36,8 +36,6 @@
 .container a:hover{
     background-color: #aab9bf;
     transition: 0.5s;
-}
-.container a:hover{
     box-shadow: 0px 0px 20px 0px rgba(253, 253, 253, 0.75);
     transition: 0.5s;
 }
@@ -130,10 +128,6 @@ nav li {
     
 }
 
-nav li:hover{
-    color: #EFF4F4;
-    transition: 0.6s;
-}
 
 nav a{
     text-decoration: none;
@@ -167,7 +161,7 @@ nav a:visited{
     left: 30.5rem;
     visibility: hidden;
     transition: 0.5s;
-    
+   
 }
 
 img{
