@@ -26,12 +26,17 @@ gallery.addEventListener('click', function(e){
 
 
   var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 30,
-      effect: 'fade',
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows : true,
+    },
   
     // Navigation arrows
   navigation: {
@@ -44,7 +49,7 @@ gallery.addEventListener('click', function(e){
       dynamicBullets: true, 
       
     },
-    loop: true,
+    
 
     autoplay: {
         delay: 2500,
@@ -52,7 +57,8 @@ gallery.addEventListener('click', function(e){
       },
 
   });
-
+   footer.style.opacity = "0";
+   footer.style.visibility = "hidden";
    container.style.opacity = "0";
    container.style.visibility = "hidden";
 
@@ -76,7 +82,6 @@ let sHome = document.getElementById('sHome');
 sHome.style.transition = "0.6s";
 home.addEventListener('click' , function (e){
 
-
   footer.style.backgroundColor = "#3E606F";
   navbar.style.backgroundColor = "#3E606F";
   background.style.backgroundColor = "#304f5c";
@@ -84,6 +89,8 @@ home.addEventListener('click' , function (e){
   e.preventDefault();
     container.style.opacity = "1";
     container.style.visibility = "visible";
+    footer.style.opacity = "1";
+   footer.style.visibility = "visible";
 
     swiperContainer.style.opacity = "0";
     swiperContainer.style.visibility = "hidden";

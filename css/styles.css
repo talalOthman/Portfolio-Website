@@ -61,7 +61,6 @@
 
  footer{
     background-color: #3E606F;
-
     height: 110px;
     border: 0px solid green;
     position: fixed;
@@ -70,8 +69,8 @@
     left: 0;
     text-align: center;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    
 }
-
 
 
 
@@ -139,8 +138,8 @@ nav a:visited{
 }
 
 #swiper-container{
-    height: 33rem !important;
-    width: 34.9rem;
+    height: 40rem !important;
+    width: 55.9rem;
     visibility: hidden;
     transition: 0.5s;
     border: 0px solid red;
@@ -158,15 +157,15 @@ nav a:visited{
     align-items: center;
     position: absolute;
     top: 5rem;
-    left: 30.5rem;
+    left: 20.5rem;
     visibility: hidden;
     transition: 0.5s;
    
 }
 
 img{
-    height: 31.5rem !important;
-    width: 34.9em;
+    height: 40rem !important;
+    width: 55.9em;
 }
 
 
