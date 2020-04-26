@@ -5,6 +5,13 @@ const footerIcons = document.getElementsByClassName('fab');
 const swiperContainer = document.getElementById('swiper-container');
 const container = document.getElementById('container');
 
+
+footer.style.webkitAnimationName = "footerAnimation";
+footer.style.webkitAnimationTimingFunction = "linear";
+footer.style.webkitAnimationFillMode = "forwards";
+footer.style.webkitAnimationDuration = "0.5s";
+footer.style.webkitAnimationPlayState = "paused";
+
 background.style.transition = "0.5s";
 footer.style.transition = "0.5s";
 navbar.style.transition = "0.5s";
@@ -12,7 +19,11 @@ navbar.style.transition = "0.5s";
 let gallery = document.getElementById('gallery');
 let sGallery = document.getElementById('sGallery');
 sGallery.style.transition = "0.5s";
+
 gallery.addEventListener('click', function(e){
+
+  
+  footer.style.webkitAnimationPlayState = "running";
 
   sGallery.style.fontWeight = "1000";
   sHome.style.fontWeight = "10";
@@ -57,12 +68,10 @@ gallery.addEventListener('click', function(e){
       },
 
   });
-   footer.style.opacity = "0";
-   footer.style.visibility = "hidden";
+  
    container.style.opacity = "0";
    container.style.visibility = "hidden";
 
-  
     swiperContainer.style.opacity = "1";
     swiperContainer.style.visibility = "visible";
     
@@ -82,6 +91,12 @@ let sHome = document.getElementById('sHome');
 sHome.style.transition = "0.6s";
 home.addEventListener('click' , function (e){
 
+
+
+  
+
+
+
   footer.style.backgroundColor = "#3E606F";
   navbar.style.backgroundColor = "#3E606F";
   background.style.backgroundColor = "#304f5c";
@@ -89,9 +104,11 @@ home.addEventListener('click' , function (e){
   e.preventDefault();
     container.style.opacity = "1";
     container.style.visibility = "visible";
-    footer.style.opacity = "1";
-   footer.style.visibility = "visible";
-
+    
+    
+    
+    footer.style.animationName = "footerAnimationBackward";
+    
     swiperContainer.style.opacity = "0";
     swiperContainer.style.visibility = "hidden";
    
