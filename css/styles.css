@@ -27,10 +27,26 @@
     background-color: #7d898e;
     height: 250px;
     width: 250px;
+    visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+    animation-name: menuContainersAnimation;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menuContainersAnimation{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .container a:hover{
@@ -71,33 +87,6 @@
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
-@keyframes footerAnimation{
-    0%{
-        height: 110px;
-    }
-    
-    25%{
-        height: 82.5px;
-    }
-
-    50%{
-        height: 55px;
-    }
-
-    75%{
-        height: 27.5px;
-    }
-
-    100% {
-        height: 0px;
-    }
-
-
-
-}
-
-
-
 
 
 
@@ -128,6 +117,20 @@ nav ul{
     border-bottom-right-radius: 40%;
     background-color:  #3E606F;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    height: 70px;
+    animation-name: navbarAnimation;
+    animation-duration: 1s;
+    
+}
+
+@keyframes navbarAnimation{
+    from{
+        height: 0px;
+    }
+
+    to{
+        height: 70px;
+    }
 }
 
 span{
@@ -135,6 +138,21 @@ span{
     font-weight: 10;
     transition: 0.5s;
     font-size: 20px;
+    animation-name: navbarTextAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes navbarTextAnimation{
+    from{
+        font-size: 0px;
+    }
+
+    to{
+        font-size: 20px;
+    }
+
     
 }
 
@@ -187,7 +205,6 @@ nav a:visited{
     left: 20.5rem;
     visibility: hidden;
     transition: 0.5s;
-    display: none;
 }
 
 img{

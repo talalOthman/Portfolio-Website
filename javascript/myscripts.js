@@ -6,11 +6,7 @@ const swiperContainer = document.getElementById('swiper-container');
 const container = document.getElementById('container');
 
 
-footer.style.webkitAnimationName = "footerAnimation";
-footer.style.webkitAnimationTimingFunction = "linear";
-footer.style.webkitAnimationFillMode = "forwards";
-footer.style.webkitAnimationDuration = "0.5s";
-footer.style.webkitAnimationPlayState = "paused";
+
 
 background.style.transition = "0.5s";
 footer.style.transition = "0.5s";
@@ -23,7 +19,7 @@ sGallery.style.transition = "0.5s";
 gallery.addEventListener('click', function(e){
 
   
-  footer.style.webkitAnimationPlayState = "running";
+
 
   sGallery.style.fontWeight = "1000";
   sHome.style.fontWeight = "10";
@@ -33,8 +29,8 @@ gallery.addEventListener('click', function(e){
   footer.style.backgroundColor = "#037AFB";
   navbar.style.backgroundColor= "#037AFB";
 
-  
-
+  footer.style.opacity = "0";
+  footer.style.visibility = "0";
 
   var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
@@ -89,13 +85,8 @@ gallery.addEventListener('click', function(e){
 let home = document.getElementById('home');
 let sHome = document.getElementById('sHome');
 sHome.style.transition = "0.6s";
+
 home.addEventListener('click' , function (e){
-
-
-
-  
-
-
 
   footer.style.backgroundColor = "#3E606F";
   navbar.style.backgroundColor = "#3E606F";
@@ -105,15 +96,14 @@ home.addEventListener('click' , function (e){
     container.style.opacity = "1";
     container.style.visibility = "visible";
     
-    
-    
-    footer.style.animationName = "footerAnimationBackward";
-    
     swiperContainer.style.opacity = "0";
     swiperContainer.style.visibility = "hidden";
    
     sHome.style.fontWeight = "1000";
     sGallery.style.fontWeight = "10";
+
+    footer.style.opacity = "1";
+    footer.style.visibility = "1";
 });
 
 
