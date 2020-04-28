@@ -1,9 +1,9 @@
-const background = document.getElementById('background');
-const navbar = document.getElementById('navbar');
-const footer = document.getElementById('footer');
-const footerIcons = document.getElementsByClassName('fab');
-const swiperContainer = document.getElementById('swiper-container');
-const container = document.getElementById('container');
+let background = document.getElementById('background');
+let navbar = document.getElementById('navbar');
+let footer = document.getElementById('footer');
+let footerIcons = document.getElementsByClassName('fab');
+let swiperContainer = document.getElementById('swiper-container');
+let container = document.getElementById('container');
 
 
 
