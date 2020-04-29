@@ -30,7 +30,7 @@ gallery.addEventListener('click', function(e){
   navbar.style.backgroundColor= "#037AFB";
 
   footer.style.opacity = "0";
-  footer.style.visibility = "0";
+  footer.style.visibility = "hidden";
 
   var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
@@ -58,15 +58,14 @@ gallery.addEventListener('click', function(e){
     },
     
 
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+   
 
   });
   
    container.style.opacity = "0";
    container.style.visibility = "hidden";
+   containerLink.style.opacity = "0";
+   containerLink.style.visibility = "hidden";
 
     swiperContainer.style.opacity = "1";
     swiperContainer.style.visibility = "visible";
@@ -103,7 +102,7 @@ home.addEventListener('click' , function (e){
     sGallery.style.fontWeight = "10";
 
     footer.style.opacity = "1";
-    footer.style.visibility = "1";
+    footer.style.visibility = "visible";
 });
 
 

@@ -205,6 +205,7 @@ nav a:visited{
     left: 20.5rem;
     visibility: hidden;
     transition: 0.5s;
+    display: none;
 }
 
 img{
