@@ -61,11 +61,8 @@ gallery.addEventListener('click', function(e){
    
 
   });
-  
-   container.style.opacity = "0";
-   container.style.visibility = "hidden";
-   containerLink.style.opacity = "0";
-   containerLink.style.visibility = "hidden";
+  container.style.opacity = "0";
+  container.style.pointerEvents = "none";
 
     swiperContainer.style.opacity = "1";
     swiperContainer.style.visibility = "visible";
@@ -93,7 +90,7 @@ home.addEventListener('click' , function (e){
 
   e.preventDefault();
     container.style.opacity = "1";
-    container.style.visibility = "visible";
+    container.style.pointerEvents = "all";
     
     swiperContainer.style.opacity = "0";
     swiperContainer.style.visibility = "hidden";
