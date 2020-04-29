@@ -25,7 +25,7 @@ grid.style.transition = "0.5s";
 
 
 
-
+//To pause the animation
 image1.style.animationPlayState = "paused";
 image2.style.animationPlayState = "paused";
 image3.style.animationPlayState = "paused";
@@ -34,6 +34,7 @@ image4.style.animationPlayState = "paused";
   //when we click gallery
   gallery.addEventListener('click', function(e){
     
+    //To start the animation
     image1.style.animationPlayState = "running";
     image2.style.animationPlayState = "running";
     image3.style.animationPlayState = "running";
@@ -43,6 +44,8 @@ image4.style.animationPlayState = "paused";
   sGallery.style.fontWeight = "1000";
   sHome.style.fontWeight = "10";
 
+
+  //FUTURE UPDATE
   /*To change the color of the site when the gallery choice is chosen
   background.style.backgroundColor = "#0373fb";
   footer.style.backgroundColor = "#037AFB";
