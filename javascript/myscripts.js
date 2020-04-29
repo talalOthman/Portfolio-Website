@@ -29,7 +29,7 @@ grid.style.transition = "0.5s";
 image1.style.animationPlayState = "paused";
 image2.style.animationPlayState = "paused";
 image3.style.animationPlayState = "paused";
-image4.style.animationPlayState = "paused";
+image4.style.animationPlayState = "paused"; 
 
   //when we click gallery
   gallery.addEventListener('click', function(e){
