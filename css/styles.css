@@ -194,17 +194,16 @@ body{
     position: absolute;
     left: 0rem;
     top: 6rem;
-    margin-left: 1rem;
     bottom: 50%;
     opacity: 0;
     pointer-events: none;
     grid-gap: 15px;
     display: grid;
-    grid-template-columns: 300px 50px 450px 250px 50px 340px;
+    grid-template-columns: 5px 290px 50px 450px 250px 50px 335px;
     grid-template-rows: 300px 300px 300px 300px 300px 200px;
     grid-template-areas: 
-    "image1 image2 image2 image5 image5 image8"
-    "image3 image3 image4 image6 image7 image7" ;
+    ". image1 image2 image2 image5 image5 image8"
+    ". image3 image3 image4 image6 image7 image7" ;
     
 }
 
