@@ -192,7 +192,7 @@ body{
 
 .grid{
     position: absolute;
-    left: 22rem;
+    left: 0rem;
     top: 6rem;
     margin-left: 1rem;
     bottom: 50%;
@@ -200,11 +200,11 @@ body{
     pointer-events: none;
     grid-gap: 15px;
     display: grid;
-    grid-template-columns: 300px 100px 400px;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 300px 50px 450px 250px 50px 340px;
+    grid-template-rows: 300px 300px 300px 300px 300px 200px;
     grid-template-areas: 
-    "image1 image2 image2"
-    "image3 image3 image4" ;
+    "image1 image2 image2 image5 image5 image8"
+    "image3 image3 image4 image6 image7 image7" ;
     
 }
 
@@ -222,7 +222,8 @@ body{
 @keyframes image{
     from{
         height:0%;
-        width: 0%;  
+        width: 0%;
+        
     }
 
     to{
@@ -265,18 +266,66 @@ body{
 
 }
 
+#image5{
+    grid-area: image5;
+    height: 0%;
+    width: 0%;
+    animation-name: image;
+    animation-duration: 1s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+
+}
+
+#image6{
+    grid-area: image6;
+    height: 0%;
+    width: 0%;
+    animation-name: image;
+    animation-duration: 1s;
+    animation-delay: 5.5s;
+    animation-fill-mode: forwards;
+
+}
+
+#image7{
+    grid-area: image7;
+    height: 0%;
+    width: 0%;
+    animation-name: image;
+    animation-duration: 1s;
+    animation-delay: 6.5s;
+    animation-fill-mode: forwards;
+
+}
+
+#image8{
+    grid-area: image8;
+    height: 0%;
+    width: 0%;
+    animation-name: image;
+    animation-duration: 1s;
+    animation-delay: 5.5s;
+    animation-fill-mode: forwards;
+
+}
+
 
 
 img{
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     transition: 0.5s;
+    filter: brightness(0.5) grayscale(1);
 }
 
 img:hover{
-    
+    filter: brightness(1) grayscale(0);
     transition: 0.5s;
     box-shadow: 0px 0px 20px 0px rgba(253, 253, 253, 0.75);
+
 }
+
+
 
 
 /* MEDIA SECTION */

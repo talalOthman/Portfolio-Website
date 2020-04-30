@@ -30,6 +30,10 @@ image1.style.animationPlayState = "paused";
 image2.style.animationPlayState = "paused";
 image3.style.animationPlayState = "paused";
 image4.style.animationPlayState = "paused"; 
+image5.style.animationPlayState = "paused"; 
+image6.style.animationPlayState = "paused"; 
+image7.style.animationPlayState = "paused"; 
+image8.style.animationPlayState = "paused"; 
 
   //when we click gallery
   gallery.addEventListener('click', function(e){
@@ -38,7 +42,11 @@ image4.style.animationPlayState = "paused";
     image1.style.animationPlayState = "running";
     image2.style.animationPlayState = "running";
     image3.style.animationPlayState = "running";
-    image4.style.animationPlayState = "running";
+    image4.style.animationPlayState = "running"; 
+    image5.style.animationPlayState = "running";
+    image6.style.animationPlayState = "running"; 
+    image7.style.animationPlayState = "running"; 
+    image8.style.animationPlayState = "running";  
 
   //To make the "Gallery" option bolder
   sGallery.style.fontWeight = "1000";
