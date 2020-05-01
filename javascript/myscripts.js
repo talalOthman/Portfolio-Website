@@ -161,7 +161,17 @@ resume.addEventListener('click', function(e){
   resume.style.opacity = "1";
   resume.style.animationDelay = "0s";
   resume.style.animationName = "notDisapper";
+
+  if(this.href){
+    let target = this.href;
+    setTimeout(function(){
+      window.location = target;
+    }, 2000);
+  };
 })
+
+
+
 
 
 
