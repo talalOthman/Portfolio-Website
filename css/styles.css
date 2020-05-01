@@ -1,6 +1,7 @@
 *{
     font-family: 'Baloo Bhaina 2', cursive;
     font-weight: bold;
+    box-sizing: border-box;
 }
 
 .container p{
@@ -33,7 +34,7 @@
     align-items: center;
     transition: 0.5s;
     animation-name: menuContainersAnimation;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
@@ -85,9 +86,31 @@
     left: 0;
     text-align: center;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    animation-name: footerAnimation;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    
 }
 
+@keyframes footerAnimation{
+    from{
+        height: 110px;
+    }
 
+    to{
+        height: 0px;
+    }
+}
+
+@keyframes reverse{
+    from{
+        height: 0px;
+    }
+
+    to{
+        height: 110px;
+    }
+}
 
 
 footer p{
@@ -120,6 +143,7 @@ nav ul{
     height: 70px;
     animation-name: navbarAnimation;
     animation-duration: 1s;
+    
     
 }
 

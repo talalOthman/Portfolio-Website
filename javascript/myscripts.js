@@ -35,6 +35,8 @@ image6.style.animationPlayState = "paused";
 image7.style.animationPlayState = "paused"; 
 image8.style.animationPlayState = "paused"; 
 
+footer.style.animationPlayState = "paused";
+
   //when we click gallery
   gallery.addEventListener('click', function(e){
     
@@ -47,6 +49,8 @@ image8.style.animationPlayState = "paused";
     image6.style.animationPlayState = "running"; 
     image7.style.animationPlayState = "running"; 
     image8.style.animationPlayState = "running";  
+
+    footer.style.animationPlayState = "running";
 
   //To make the "Gallery" option bolder
   sGallery.style.fontWeight = "1000";
@@ -66,8 +70,11 @@ image8.style.animationPlayState = "paused";
 
 
   //To make the footer and container dissappear smoothly
-  footer.style.opacity = "0";
+  
   footer.style.pointerEvents = "none";
+  footer.style.animationName = "footerAnimation";
+  
+  
 
   container.style.opacity = "0";
   container.style.pointerEvents = "none";
@@ -76,8 +83,7 @@ image8.style.animationPlayState = "paused";
   //To make the grid appear
   grid.style.opacity = "1";
   grid.style.pointerEvents = "all";
- 
-    
+  
   });
 
   
@@ -108,12 +114,30 @@ image8.style.animationPlayState = "paused";
   container.style.opacity = "1";
   container.style.pointerEvents = "all";
     
-  footer.style.opacity = "1";
+ 
   footer.style.pointerEvents = "all";
+  footer.style.animationName = "reverse";
+  
 
   //To make the grid disappear
   grid.style.opacity = "0";
   grid.style.pointerEvents = "none";
+  
+
+  //To pause the animation
+image1.style.animationPlayState = "paused";
+image2.style.animationPlayState = "paused";
+image3.style.animationPlayState = "paused";
+image4.style.animationPlayState = "paused"; 
+image5.style.animationPlayState = "paused"; 
+image6.style.animationPlayState = "paused"; 
+image7.style.animationPlayState = "paused"; 
+image8.style.animationPlayState = "paused"; 
+
+
+
+
+
 });
 
 
