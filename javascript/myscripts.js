@@ -14,6 +14,8 @@ let image1 = document.getElementById('image1');
 let image2 = document.getElementById('image2');
 let image3 = document.getElementById('image3');
 let image4 = document.getElementById('image4');
+let resume = document.getElementById('Resume');
+let project = document.getElementById('Projects'); 
 
 // To make the transition smooth for all these elements
 background.style.transition = "0.5s";
@@ -22,7 +24,12 @@ navbar.style.transition = "0.5s";
 sGallery.style.transition = "0.5s";
 sHome.style.transition = "0.5s";
 grid.style.transition = "0.5s";
+project.style.transition = "0.5s";
+resume.style.transition = "0.5s";
 
+
+sHome.style.fontWeight = "1000";
+sGallery.style.fontWeight = "10";
 
 
 //To pause the animation
@@ -70,7 +77,6 @@ footer.style.animationPlayState = "paused";
 
 
   //To make the footer and container dissappear smoothly
-  
   footer.style.pointerEvents = "none";
   footer.style.animationName = "footerAnimation";
   
@@ -83,7 +89,8 @@ footer.style.animationPlayState = "paused";
   //To make the grid appear
   grid.style.opacity = "1";
   grid.style.pointerEvents = "all";
-  
+  grid.style.display = "grid";
+    
   });
 
   
@@ -114,15 +121,20 @@ footer.style.animationPlayState = "paused";
   container.style.opacity = "1";
   container.style.pointerEvents = "all";
     
- 
+  footer.style.opacity = "1";
   footer.style.pointerEvents = "all";
-  footer.style.animationName = "reverse";
+
+  if(footer.style.animationPlayState === "running"){
+    footer.style.animationName = "reverse";
+  }
+
+  
   
 
   //To make the grid disappear
   grid.style.opacity = "0";
   grid.style.pointerEvents = "none";
-  
+  /*grid.style.display = "none";*/
 
   //To pause the animation
 image1.style.animationPlayState = "paused";
@@ -135,12 +147,21 @@ image7.style.animationPlayState = "paused";
 image8.style.animationPlayState = "paused"; 
 
 
-
-
-
 });
 
+resume.addEventListener('click', function(e){
 
+  e.preventDefault();
+
+  project.style.opacity = "1";
+  project.style.animationDelay = "0s";
+  project.style.animationName = "disapperAnimation";
+  
+
+  resume.style.opacity = "1";
+  resume.style.animationDelay = "0s";
+  resume.style.animationName = "notDisapper";
+})
 
 
 
