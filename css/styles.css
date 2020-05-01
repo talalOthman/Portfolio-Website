@@ -34,7 +34,7 @@
     transition: 0.5s;
     opacity: 0;
     animation-name: menuContainersAnimation;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
@@ -76,7 +76,7 @@
     
 
     to{
-        margin-left: 35%;
+        margin-left: 31%;
         
     }
 }
@@ -86,7 +86,7 @@
     
 
     to{
-        margin-right: 35%;
+        margin-right: 31%;
         
     }
 }
