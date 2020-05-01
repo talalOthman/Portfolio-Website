@@ -171,6 +171,28 @@ resume.addEventListener('click', function(e){
 })
 
 
+project.addEventListener('click', function(e){
+
+  e.preventDefault();
+
+  project.style.opacity = "1";
+  project.style.animationDelay = "0s";
+  project.style.animationName = "notDisapperReverse";
+
+
+  resume.style.opacity = "1";
+  resume.style.animationDelay = "0s";
+  resume.style.animationName = "disapperAnimation";
+
+  if(this.href){
+    let target = this.href;
+    setTimeout(function(){
+      window.location = target;
+    }, 2000);
+  };
+})
+
+
 
 
 

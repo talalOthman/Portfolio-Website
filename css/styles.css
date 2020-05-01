@@ -81,6 +81,17 @@
     }
 }
 
+
+@keyframes notDisapperReverse{
+    
+
+    to{
+        margin-right: 35%;
+        
+    }
+}
+
+
 #Projects{
     animation-fill-mode: forwards;
 }
