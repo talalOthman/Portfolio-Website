@@ -166,7 +166,7 @@ resume.addEventListener('click', function(e){
     let target = this.href;
     setTimeout(function(){
       window.location = target;
-    }, 2000);
+    }, 1000);
   };
 })
 
@@ -188,7 +188,7 @@ project.addEventListener('click', function(e){
     let target = this.href;
     setTimeout(function(){
       window.location = target;
-    }, 2000);
+    }, 1000);
   };
 })
 
