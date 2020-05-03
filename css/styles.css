@@ -305,7 +305,7 @@ body{
     width: 0%;
     animation-name: image;
     animation-duration: 1s;
-    animation-delay: 3.5s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
     
 }
@@ -317,7 +317,7 @@ body{
     width: 0%;
     animation-name: image;
     animation-duration: 1s;
-    animation-delay: 2.5s;
+    animation-delay: 1.5s;
     animation-fill-mode: forwards;
 }
 
@@ -328,7 +328,7 @@ body{
     width: 0%;
     animation-name: image;
     animation-duration: 1s;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 
 }
@@ -339,7 +339,7 @@ body{
     width: 0%;
     animation-name: image;
     animation-duration: 1s;
-    animation-delay: 4.5s;
+    animation-delay: 2.5s;
     animation-fill-mode: forwards;
 
 }
@@ -350,7 +350,7 @@ body{
     width: 0%;
     animation-name: image;
     animation-duration: 1s;
-    animation-delay: 5.5s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 
 }
@@ -361,7 +361,7 @@ body{
     width: 0%;
     animation-name: image;
     animation-duration: 1s;
-    animation-delay: 7.5s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
 
 }
@@ -372,7 +372,7 @@ body{
     width: 0%;
     animation-name: image;
     animation-duration: 1s;
-    animation-delay: 6.5s;
+    animation-delay: 3.5s;
     animation-fill-mode: forwards;
 
 }
