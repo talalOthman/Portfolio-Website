@@ -135,6 +135,7 @@ footer.style.animationPlayState = "paused";
   grid.style.opacity = "0";
   grid.style.pointerEvents = "none";
   /*grid.style.display = "none";*/
+  
 
   //To pause the animation
 image1.style.animationPlayState = "paused";
@@ -149,6 +150,8 @@ image8.style.animationPlayState = "paused";
 
 });
 
+
+//When you press 'Resume' option
 resume.addEventListener('click', function(e){
 
   e.preventDefault();
@@ -171,6 +174,7 @@ resume.addEventListener('click', function(e){
 })
 
 
+//When you press 'Projects' option
 project.addEventListener('click', function(e){
 
   e.preventDefault();
