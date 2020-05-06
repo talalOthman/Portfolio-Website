@@ -156,6 +156,7 @@ resume.addEventListener('click', function(e){
 
   e.preventDefault();
 
+  // To activate the animation when you choose 'resume' option
   project.style.opacity = "1";
   project.style.animationDelay = "0s";
   project.style.animationName = "disapperAnimation";
@@ -179,6 +180,7 @@ project.addEventListener('click', function(e){
 
   e.preventDefault();
 
+  // To activate the animation when 'project' option is pressed
   project.style.opacity = "1";
   project.style.animationDelay = "0s";
   project.style.animationName = "notDisapperReverse";
