@@ -286,6 +286,7 @@ body{
     
 }
 
+/* images animation */
 @keyframes image{
     from{
         height:0%;
