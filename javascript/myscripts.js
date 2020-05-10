@@ -190,6 +190,7 @@ project.addEventListener('click', function(e){
   resume.style.animationDelay = "0s";
   resume.style.animationName = "disapperAnimation";
 
+  // To delay the transition to allow the animation to play
   if(this.href){
     let target = this.href;
     setTimeout(function(){
