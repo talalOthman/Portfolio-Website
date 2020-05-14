@@ -27,7 +27,7 @@ grid.style.transition = "0.5s";
 project.style.transition = "0.5s";
 resume.style.transition = "0.5s";
 
-
+// TO make the 'Home' font bolder than 'Gallery' font
 sHome.style.fontWeight = "1000";
 sGallery.style.fontWeight = "10";
 
