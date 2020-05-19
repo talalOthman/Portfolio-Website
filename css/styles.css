@@ -1,3 +1,11 @@
+html{
+    box-sizing: border-box;
+    }
+    
+    *, *::before, *::after{
+    box-sizing: inherit;
+    }
+
 *{
     font-family: 'Baloo Bhaina 2', cursive;
     font-weight: bold;
@@ -176,14 +184,12 @@ body{
 
 nav ul{
     display: flex;
-    justify-content: center;
     border: 0px solid grey;
-    margin: 0 29rem;
+    margin: 0;
     padding: 0;
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
     background-color:  #3E606F;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     height: 70px;
     animation-name: navbarAnimation;
     animation-duration: 1s;
@@ -249,6 +255,46 @@ nav a{
 nav a:visited{
     color: #3E606F;
 }
+
+nav{
+    border: 0px solid red;
+    display: flex;
+    justify-content: center;
+    margin: 0 29rem;
+    padding: 0;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    background-color:  #3E606F;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    height: 70px;
+    animation-name: navbarAnimation;
+    animation-duration: 1s;
+}
+
+.a-side-settings{
+    position: absolute;
+    top: 0;
+    margin-left: 93%;
+    margin-top: 0;
+    padding : 0;
+    padding-top: 0.4rem;
+    border: 0px solid red;
+}
+
+.fas, .fas:visited{
+    font-size: 1.5rem;
+    color: #193441;
+    margin-left: 1px;
+    border: 0px solid blue;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.fas:hover{
+    transition: 0.5s;
+    color: white;
+}
+
 
 html{
     height: 100%;
@@ -581,6 +627,7 @@ img:hover{
     nav {
         padding: 0;
         
+        
     }
 
     nav a{
@@ -596,6 +643,7 @@ img:hover{
         margin-top: 0rem;
         padding-top: 0rem;
         margin-left: 2rem;
+        
 
     }
 
@@ -606,7 +654,7 @@ img:hover{
         margin-left: 5rem;
         margin-bottom: 0;
         
-        border: 0px solid red;
+        border: px solid red;
     }
     
     .container a{
