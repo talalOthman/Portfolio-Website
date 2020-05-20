@@ -122,7 +122,7 @@ html{
  }
 
  footer i:hover{
-     color: #EFF4F4;
+     color: #EFF4F4 !important;
      transition: 0.5s;
      text-shadow: 0 0 15px rgba(253, 253, 253, 0.75), 0 0 10px rgba(253, 253, 253, 0.75);
  }
@@ -293,6 +293,7 @@ nav{
 .fas:hover{
     transition: 0.5s;
     color: white;
+    text-shadow: 0 0 15px rgba(253, 253, 253, 0.75), 0 0 10px rgba(253, 253, 253, 0.75);
 }
 
 

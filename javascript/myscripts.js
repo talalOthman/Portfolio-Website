@@ -1,4 +1,3 @@
-
 // Declaration for all the used elements
 let background = document.getElementById('background');
 let navbar = document.getElementById('navbar');
@@ -15,7 +14,9 @@ let image2 = document.getElementById('image2');
 let image3 = document.getElementById('image3');
 let image4 = document.getElementById('image4');
 let resume = document.getElementById('Resume');
-let project = document.getElementById('Projects'); 
+let project = document.getElementById('Projects');
+let message = document.getElementById('message');
+let settings = document.getElementById('settings');
 
 // To make the transition smooth for all these elements
 background.style.transition = "0.5s";
@@ -27,6 +28,7 @@ grid.style.transition = "0.5s";
 project.style.transition = "0.5s";
 resume.style.transition = "0.5s";
 
+
 // TO make the 'Home' font bolder than 'Gallery' font
 sHome.style.fontWeight = "1000";
 sGallery.style.fontWeight = "10";
@@ -36,28 +38,28 @@ sGallery.style.fontWeight = "10";
 image1.style.animationPlayState = "paused";
 image2.style.animationPlayState = "paused";
 image3.style.animationPlayState = "paused";
-image4.style.animationPlayState = "paused"; 
-image5.style.animationPlayState = "paused"; 
-image6.style.animationPlayState = "paused"; 
-image7.style.animationPlayState = "paused"; 
-image8.style.animationPlayState = "paused"; 
+image4.style.animationPlayState = "paused";
+image5.style.animationPlayState = "paused";
+image6.style.animationPlayState = "paused";
+image7.style.animationPlayState = "paused";
+image8.style.animationPlayState = "paused";
 
 footer.style.animationPlayState = "paused";
 
-  //when we click gallery
-  gallery.addEventListener('click', function(e){
-    
-    //To start the animation
-    image1.style.animationPlayState = "running";
-    image2.style.animationPlayState = "running";
-    image3.style.animationPlayState = "running";
-    image4.style.animationPlayState = "running"; 
-    image5.style.animationPlayState = "running";
-    image6.style.animationPlayState = "running"; 
-    image7.style.animationPlayState = "running"; 
-    image8.style.animationPlayState = "running";  
+//when we click gallery
+gallery.addEventListener('click', function (e) {
 
-    footer.style.animationPlayState = "running";
+  //To start the animation
+  image1.style.animationPlayState = "running";
+  image2.style.animationPlayState = "running";
+  image3.style.animationPlayState = "running";
+  image4.style.animationPlayState = "running";
+  image5.style.animationPlayState = "running";
+  image6.style.animationPlayState = "running";
+  image7.style.animationPlayState = "running";
+  image8.style.animationPlayState = "running";
+
+  footer.style.animationPlayState = "running";
 
   //To make the "Gallery" option bolder
   sGallery.style.fontWeight = "1000";
@@ -79,8 +81,8 @@ footer.style.animationPlayState = "paused";
   //To make the footer and container dissappear smoothly
   footer.style.pointerEvents = "none";
   footer.style.animationName = "footerAnimation";
-  
-  
+
+
 
   container.style.opacity = "0";
   container.style.pointerEvents = "none";
@@ -90,19 +92,22 @@ footer.style.animationPlayState = "paused";
   grid.style.opacity = "1";
   grid.style.pointerEvents = "all";
   grid.style.display = "grid";
-    
-  });
-
-  
 
 
- 
-  
+  message.style.color = "#193441";
+
+});
 
 
 
-  // when we click home
-  home.addEventListener('click' , function (e){
+
+
+
+
+
+
+// when we click home
+home.addEventListener('click', function (e) {
 
   //To change the color to the home theme
   footer.style.backgroundColor = "#3E606F";
@@ -120,39 +125,41 @@ footer.style.animationPlayState = "paused";
   //To make the footer and containers appear smoothly 
   container.style.opacity = "1";
   container.style.pointerEvents = "all";
-    
+
   footer.style.opacity = "1";
   footer.style.pointerEvents = "all";
 
-  if(footer.style.animationPlayState === "running"){
+  message.style.color = "#193441";
+
+  if (footer.style.animationPlayState === "running") {
     footer.style.animationName = "reverse";
   }
 
-  
-  
+
+
 
   //To make the grid disappear
   grid.style.opacity = "0";
   grid.style.pointerEvents = "none";
   /*grid.style.display = "none";*/
-  
+
 
   //To pause the animation
-image1.style.animationPlayState = "paused";
-image2.style.animationPlayState = "paused";
-image3.style.animationPlayState = "paused";
-image4.style.animationPlayState = "paused"; 
-image5.style.animationPlayState = "paused"; 
-image6.style.animationPlayState = "paused"; 
-image7.style.animationPlayState = "paused"; 
-image8.style.animationPlayState = "paused"; 
+  image1.style.animationPlayState = "paused";
+  image2.style.animationPlayState = "paused";
+  image3.style.animationPlayState = "paused";
+  image4.style.animationPlayState = "paused";
+  image5.style.animationPlayState = "paused";
+  image6.style.animationPlayState = "paused";
+  image7.style.animationPlayState = "paused";
+  image8.style.animationPlayState = "paused";
 
 
 });
 
 
 //When you press 'Resume' option
-resume.addEventListener('click', function(e){
+resume.addEventListener('click', function (e) {
 
   e.preventDefault();
 
@@ -160,15 +167,17 @@ resume.addEventListener('click', function(e){
   project.style.opacity = "1";
   project.style.animationDelay = "0s";
   project.style.animationName = "disapperAnimation";
-  
+
 
   resume.style.opacity = "1";
   resume.style.animationDelay = "0s";
   resume.style.animationName = "notDisapper";
 
-  if(this.href){
+
+
+  if (this.href) {
     let target = this.href;
-    setTimeout(function(){
+    setTimeout(function () {
       window.location = target;
     }, 900);
   };
@@ -176,7 +185,7 @@ resume.addEventListener('click', function(e){
 
 
 //When you press 'Projects' option
-project.addEventListener('click', function(e){
+project.addEventListener('click', function (e) {
 
   e.preventDefault();
 
@@ -191,16 +200,49 @@ project.addEventListener('click', function(e){
   resume.style.animationName = "disapperAnimation";
 
   // To delay the transition to allow the animation to play
-  if(this.href){
+  if (this.href) {
     let target = this.href;
-    setTimeout(function(){
+    setTimeout(function () {
       window.location = target;
     }, 700);
   };
 })
 
 
+message.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  container.style.opacity = "0";
+  container.style.pointerEvents = "none";
+
+  sHome.style.fontWeight = "10";
+  sGallery.style.fontWeight = "10";
+
+
+  message.style.color = "white";
 
 
 
+  //To make the grid disappear
+  grid.style.opacity = "0";
+  grid.style.pointerEvents = "none";
+  /*grid.style.display = "none";*/
 
+
+  //To pause the animation
+  image1.style.animationPlayState = "paused";
+  image2.style.animationPlayState = "paused";
+  image3.style.animationPlayState = "paused";
+  image4.style.animationPlayState = "paused";
+  image5.style.animationPlayState = "paused";
+  image6.style.animationPlayState = "paused";
+  image7.style.animationPlayState = "paused";
+  image8.style.animationPlayState = "paused";
+
+
+  footer.style.animationPlayState = "running";
+  //To make the footer and container dissappear smoothly
+  footer.style.pointerEvents = "none";
+  footer.style.animationName = "footerAnimation";
+
+})
