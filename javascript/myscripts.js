@@ -93,7 +93,7 @@ gallery.addEventListener('click', function (e) {
   grid.style.pointerEvents = "all";
   grid.style.display = "grid";
 
-
+  // to change the color of the 'message' icon
   message.style.color = "#193441";
 
 });
