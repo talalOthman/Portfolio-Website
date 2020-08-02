@@ -245,4 +245,51 @@ message.addEventListener('click', function (e) {
   footer.style.pointerEvents = "none";
   footer.style.animationName = "footerAnimation";
 
+  //To make the settings icon go to the original color
+  settings.style.color = "#193441";
+
+})
+
+
+settings.addEventListener('click', function(e){
+  e.preventDefault();
+
+
+  container.style.opacity = "0";
+  container.style.pointerEvents = "none";
+
+  sHome.style.fontWeight = "10";
+  sGallery.style.fontWeight = "10";
+
+
+  settings.style.color = "white";
+
+
+
+  //To make the grid disappear
+  grid.style.opacity = "0";
+  grid.style.pointerEvents = "none";
+  /*grid.style.display = "none";*/
+
+
+  //To pause the animation
+  image1.style.animationPlayState = "paused";
+  image2.style.animationPlayState = "paused";
+  image3.style.animationPlayState = "paused";
+  image4.style.animationPlayState = "paused";
+  image5.style.animationPlayState = "paused";
+  image6.style.animationPlayState = "paused";
+  image7.style.animationPlayState = "paused";
+  image8.style.animationPlayState = "paused";
+
+
+  footer.style.animationPlayState = "running";
+  //To make the footer and container dissappear smoothly
+  footer.style.pointerEvents = "none";
+  footer.style.animationName = "footerAnimation";
+
+  //To make the message icon go to the original color
+  message.style.color = "#193441";
+
+
 })

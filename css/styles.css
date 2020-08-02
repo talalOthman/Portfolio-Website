@@ -292,7 +292,7 @@ nav{
 
 .fas:hover{
     transition: 0.5s;
-    color: white;
+    color: white !important;
     text-shadow: 0 0 15px rgba(253, 253, 253, 0.75), 0 0 10px rgba(253, 253, 253, 0.75);
 }
 
