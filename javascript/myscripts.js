@@ -17,6 +17,7 @@ let resume = document.getElementById('Resume');
 let project = document.getElementById('Projects');
 let message = document.getElementById('message');
 let settings = document.getElementById('settings');
+let form = document.getElementById("form");
 
 // To make the transition smooth for all these elements
 background.style.transition = "0.5s";
@@ -28,10 +29,19 @@ grid.style.transition = "0.5s";
 project.style.transition = "0.5s";
 resume.style.transition = "0.5s";
 
+//to make the form disapper by default
+form.style.opacity = "0";
+form.style.pointerEvents = "none";
+
+
 
 // TO make the 'Home' font bolder than 'Gallery' font
 sHome.style.fontWeight = "1000";
 sGallery.style.fontWeight = "10";
+
+// To make "home" option white when entering the site
+sHome.style.color = "white";
+
 
 
 //To pause the animation
@@ -65,6 +75,10 @@ gallery.addEventListener('click', function (e) {
   sGallery.style.fontWeight = "1000";
   sHome.style.fontWeight = "10";
 
+  //To make the color of "Gallery" option white
+  sGallery.style.color = "white";
+  sHome.style.color = "#193441";
+
 
   //FUTURE UPDATE
   /*To change the color of the site when the gallery choice is chosen
@@ -96,6 +110,10 @@ gallery.addEventListener('click', function (e) {
   // to change the color of the 'message' icon
   message.style.color = "#193441";
 
+  //to make the form disapper by default
+  form.style.opacity = "0";
+  form.style.pointerEvents = "none";
+
 });
 
 
@@ -121,6 +139,10 @@ home.addEventListener('click', function (e) {
   sHome.style.fontWeight = "1000";
   sGallery.style.fontWeight = "10";
 
+  //To make the color of "Home" option white
+  sHome.style.color = "white";
+  sGallery.style.color = "#193441";
+
 
   //To make the footer and containers appear smoothly 
   container.style.opacity = "1";
@@ -130,6 +152,7 @@ home.addEventListener('click', function (e) {
   footer.style.pointerEvents = "all";
 
   message.style.color = "#193441";
+  settings.style.color = "#193441";
 
   if (footer.style.animationPlayState === "running") {
     footer.style.animationName = "reverse";
@@ -153,6 +176,10 @@ home.addEventListener('click', function (e) {
   image6.style.animationPlayState = "paused";
   image7.style.animationPlayState = "paused";
   image8.style.animationPlayState = "paused";
+
+  //to make the form disapper by default
+  form.style.opacity = "0";
+  form.style.pointerEvents = "none";
 
 
 });
@@ -206,6 +233,11 @@ project.addEventListener('click', function (e) {
       window.location = target;
     }, 700);
   };
+
+
+  //to make the form disapper by default
+  form.style.opacity = "0";
+  form.style.pointerEvents = "none";
 })
 
 
@@ -245,8 +277,16 @@ message.addEventListener('click', function (e) {
   footer.style.pointerEvents = "none";
   footer.style.animationName = "footerAnimation";
 
-  //To make the settings icon go to the original color
+  //To make all unchosen icons go to the original color
   settings.style.color = "#193441";
+  sGallery.style.color = "#193441";
+  sHome.style.color = "#193441";
+
+  //display the form
+  form.style.opacity = "1";
+  form.style.pointerEvents = "all";
+
+
 
 })
 
@@ -288,8 +328,14 @@ settings.addEventListener('click', function(e){
   footer.style.pointerEvents = "none";
   footer.style.animationName = "footerAnimation";
 
-  //To make the message icon go to the original color
+  //To make all unchosen icons go to the original color
   message.style.color = "#193441";
+  sGallery.style.color = "#193441";
+  sHome.style.color = "#193441";
+
+  //to make the form disapper by default
+  form.style.opacity = "0";
+  form.style.pointerEvents = "none";
 
 
 })
