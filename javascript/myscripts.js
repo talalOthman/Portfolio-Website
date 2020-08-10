@@ -37,7 +37,7 @@ form.style.pointerEvents = "none";
 
 // TO make the 'Home' font bolder than 'Gallery' font
 sHome.style.fontWeight = "1000";
-sGallery.style.fontWeight = "10";
+sGallery.style.fontWeight = "1000";
 
 // To make "home" option white when entering the site
 sHome.style.color = "white";
@@ -71,9 +71,7 @@ gallery.addEventListener('click', function (e) {
 
   footer.style.animationPlayState = "running";
 
-  //To make the "Gallery" option bolder
-  sGallery.style.fontWeight = "1000";
-  sHome.style.fontWeight = "10";
+  
 
   //To make the color of "Gallery" option white
   sGallery.style.color = "white";
@@ -135,9 +133,7 @@ home.addEventListener('click', function (e) {
 
   e.preventDefault();
 
-  //To make the "Home" option bolder
-  sHome.style.fontWeight = "1000";
-  sGallery.style.fontWeight = "10";
+ 
 
   //To make the color of "Home" option white
   sHome.style.color = "white";
@@ -247,8 +243,7 @@ message.addEventListener('click', function (e) {
   container.style.opacity = "0";
   container.style.pointerEvents = "none";
 
-  sHome.style.fontWeight = "10";
-  sGallery.style.fontWeight = "10";
+  
 
 
   message.style.color = "white";
@@ -298,8 +293,7 @@ settings.addEventListener('click', function(e){
   container.style.opacity = "0";
   container.style.pointerEvents = "none";
 
-  sHome.style.fontWeight = "10";
-  sGallery.style.fontWeight = "10";
+  
 
 
   settings.style.color = "white";
