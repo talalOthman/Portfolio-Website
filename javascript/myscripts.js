@@ -190,11 +190,14 @@ resume.addEventListener('click', function (e) {
 
   // To activate the animation when you choose 'resume' option
   if(mq.matches){
-    project.style.opacity = "1";
-    project.style.animationDelay = "0s";
-    project.style.animationName = "disapperAnimation";
+    //nothing will happen
   }
   else{
+  project.style.opacity = "1";
+  project.style.animationDelay = "0s";
+  project.style.animationName = "disapperAnimation";
+
+
   resume.style.opacity = "1";
   resume.style.animationDelay = "0s";
   resume.style.animationName = "notDisapper";
@@ -220,15 +223,17 @@ project.addEventListener('click', function (e) {
 
   // To activate the animation when 'project' option is pressed
   if(mq.matches){
-    resume.style.opacity = "1";
-    resume.style.animationDelay = "0s";
-    resume.style.animationName = "disapperAnimation";
+    //nothing will happen
   }
   else{
   project.style.opacity = "1";
   project.style.animationDelay = "0s";
   project.style.animationName = "notDisapperReverse";
 
+
+  resume.style.opacity = "1";
+  resume.style.animationDelay = "0s";
+  resume.style.animationName = "disapperAnimation";
   }
 
   // To delay the transition to allow the animation to play
