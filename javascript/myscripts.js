@@ -18,6 +18,7 @@ let project = document.getElementById('Projects');
 let message = document.getElementById('message');
 let settings = document.getElementById('settings');
 let form = document.getElementById("form");
+let mq = window.matchMedia( "(max-width: 375px)" );
 
 // To make the transition smooth for all these elements
 background.style.transition = "0.5s";
@@ -188,16 +189,18 @@ resume.addEventListener('click', function (e) {
   e.preventDefault();
 
   // To activate the animation when you choose 'resume' option
-  project.style.opacity = "1";
-  project.style.animationDelay = "0s";
-  project.style.animationName = "disapperAnimation";
-
-
+  if(mq.matches){
+    project.style.opacity = "1";
+    project.style.animationDelay = "0s";
+    project.style.animationName = "disapperAnimation";
+  }
+  else{
   resume.style.opacity = "1";
   resume.style.animationDelay = "0s";
   resume.style.animationName = "notDisapper";
+  }
 
-
+  
 
   if (this.href) {
     let target = this.href;
@@ -205,7 +208,9 @@ resume.addEventListener('click', function (e) {
       window.location = target;
     }, 900);
   };
+
 })
+
 
 
 //When you press 'Projects' option
@@ -214,14 +219,17 @@ project.addEventListener('click', function (e) {
   e.preventDefault();
 
   // To activate the animation when 'project' option is pressed
+  if(mq.matches){
+    resume.style.opacity = "1";
+    resume.style.animationDelay = "0s";
+    resume.style.animationName = "disapperAnimation";
+  }
+  else{
   project.style.opacity = "1";
   project.style.animationDelay = "0s";
   project.style.animationName = "notDisapperReverse";
 
-
-  resume.style.opacity = "1";
-  resume.style.animationDelay = "0s";
-  resume.style.animationName = "disapperAnimation";
+  }
 
   // To delay the transition to allow the animation to play
   if (this.href) {
