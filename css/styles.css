@@ -130,7 +130,7 @@ html{
 
  footer{
     background-color: #3E606F;
-    height: 110px;
+    height: 15vh;
     border: 0px solid green;
     position: fixed;
     bottom: 0;
@@ -640,8 +640,9 @@ button:active{
 
     .container{
         display: block;
-        margin-top: 6vh;
-        margin-left: 20vw;
+        margin-top: 3vh;
+        margin-left: 23vw;
+        
         margin-bottom: 0;
         border: 0px solid red;
     }
@@ -665,6 +666,7 @@ button:active{
     
     footer{
         position: fixed;
+        height: 18vh;
     }
 }
 
