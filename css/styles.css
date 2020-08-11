@@ -12,6 +12,11 @@ html{
     box-sizing: border-box;
 }
 
+
+input, textarea, button, span{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .container p{
     font-size: 45px;
     color: #304f5c;
@@ -667,6 +672,21 @@ button:active{
     footer{
         position: fixed;
         height: 18vh;
+    }
+
+    form input{
+        width: 70vw;
+        
+    }
+
+    form{
+        left: 12vw !important;
+        top: 14vh !important;
+    }
+
+    button{
+        width: 30vw;
+        margin-left: 18vw;
     }
 }
 
