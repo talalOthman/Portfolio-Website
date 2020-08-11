@@ -622,7 +622,7 @@ button:active{
 
     nav {
         padding: 0;
-        margin-left: 20vw;
+        margin-left: 23vw;
         margin-top: -3vh;
 
 
@@ -640,7 +640,7 @@ button:active{
 
     .container{
         display: block;
-        margin-top: 8vh;
+        margin-top: 6vh;
         margin-left: 20vw;
         margin-bottom: 0;
         border: 0px solid red;
@@ -665,7 +665,6 @@ button:active{
     
     footer{
         position: fixed;
-        height: 100px;
     }
 }
 
