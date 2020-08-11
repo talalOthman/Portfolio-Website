@@ -107,6 +107,7 @@ gallery.addEventListener('click', function (e) {
 
   // to change the color of the 'message' icon
   message.style.color = "#193441";
+  settings.style.color = "#193441";
 
   //to make the form disapper by default
   form.style.opacity = "0";
