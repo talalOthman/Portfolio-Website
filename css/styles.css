@@ -675,9 +675,9 @@ button:active{
     }
 
     form input{
-        width: 70vw;
+        width: 10rem;
         min-width: 70vw;
-        height: 8vh;
+        height: 3rem;
         
     }
 
