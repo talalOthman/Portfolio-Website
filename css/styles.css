@@ -694,6 +694,10 @@ button:active{
         margin-left: 18vw;
     }
 
+    textarea{
+        height: 18rem;
+    }
+
     .grid{
         position: absolute;
         left: 15vw;
