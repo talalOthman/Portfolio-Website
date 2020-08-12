@@ -318,6 +318,8 @@ body{
     
 }
 
+
+
 #image1{
     grid-area: image1;
     height:0%;
@@ -427,6 +429,7 @@ img{
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     transition: 0.5s;
     filter: brightness(0.5) grayscale(1);
+    
 }
 
 img:hover{
@@ -689,6 +692,22 @@ button:active{
     button{
         width: 30vw;
         margin-left: 18vw;
+    }
+
+    .grid{
+        position: absolute;
+        left: 11vw;
+        grid-template-columns: 50vh;
+        grid-template-rows: repeat(8, 40vh);
+        grid-template-areas: 
+        "image1"
+        "image4" 
+        "image3"
+        "image2"
+        "image5"
+        "image6"
+        "image8"
+        "image7";
     }
 }
 

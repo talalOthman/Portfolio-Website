@@ -160,9 +160,15 @@ home.addEventListener('click', function (e) {
 
 
   //To make the grid disappear
-  grid.style.opacity = "0";
-  grid.style.pointerEvents = "none";
-  /*grid.style.display = "none";*/
+  if(mq.matches){
+    grid.style.display = "none";
+  }
+  else{
+    grid.style.opacity = "0";
+    grid.style.pointerEvents = "none";
+  }
+
+ 
 
 
   //To pause the animation
@@ -265,9 +271,14 @@ message.addEventListener('click', function (e) {
 
 
   //To make the grid disappear
-  grid.style.opacity = "0";
-  grid.style.pointerEvents = "none";
-  /*grid.style.display = "none";*/
+  if(mq.matches){
+    grid.style.display = "none";
+  }
+  else{
+    grid.style.opacity = "0";
+    grid.style.pointerEvents = "none";
+  }
+  
 
 
   //To pause the animation
@@ -314,10 +325,14 @@ settings.addEventListener('click', function(e){
 
 
 
-  //To make the grid disappear
-  grid.style.opacity = "0";
-  grid.style.pointerEvents = "none";
-  /*grid.style.display = "none";*/
+   //To make the grid disappear
+   if(mq.matches){
+    grid.style.display = "none";
+  }
+  else{
+    grid.style.opacity = "0";
+    grid.style.pointerEvents = "none";
+  }
 
 
   //To pause the animation
