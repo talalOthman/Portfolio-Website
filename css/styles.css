@@ -700,7 +700,7 @@ button:active{
 
     .grid{
         position: absolute;
-        left: 15vw;
+        left: 12vw;
         grid-template-columns: 45vh;
         grid-template-rows: repeat(8, 40vh);
         grid-template-areas: 
