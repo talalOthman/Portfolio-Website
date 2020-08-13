@@ -299,6 +299,8 @@ html{
 
 body{
     height: 100%;
+    width: 100%;
+    
 }
 
 .grid{
@@ -700,6 +702,9 @@ button:active{
 
     .grid{
         position: absolute;
+        overflow: scroll;
+        height: 80vh;
+        
         left: 12vw;
         grid-template-columns: 45vh;
         grid-template-rows: repeat(8, 40vh);
