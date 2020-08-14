@@ -660,7 +660,7 @@ button:active{
     .container{
         display: block;
         margin-top: 2vh;
-        margin-left: 21.5vw;
+        margin-left: 22vw;
         margin-bottom: 0;
         border: 0px solid red;
     }
@@ -713,7 +713,7 @@ button:active{
         position: absolute;
         overflow: scroll;
         height: 80vh;
-        
+        top: 5vh;
         left: 12vw;
         grid-template-columns: 41vh;
         grid-template-rows: repeat(8, 40vh);
