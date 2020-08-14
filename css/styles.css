@@ -641,7 +641,7 @@ button:active{
 
     nav {
         padding: 0;
-        margin-left: 23vw;
+        margin-left: 21vw;
         margin-top: -3vh;
 
 
@@ -659,16 +659,16 @@ button:active{
 
     .container{
         display: block;
-        margin-top: 3vh;
-        margin-left: 23vw;
+        margin-top: 2vh;
+        margin-left: 21vw;
         margin-bottom: 0;
         border: 0px solid red;
     }
 
     .container a{
         
-        height: 200px;
-        width: 200px;
+        height: 190px;
+        width: 190px;
     }
 
     .container p{
@@ -715,7 +715,7 @@ button:active{
         height: 80vh;
         
         left: 12vw;
-        grid-template-columns: 45vh;
+        grid-template-columns: 42vh;
         grid-template-rows: repeat(8, 40vh);
         grid-template-areas: 
         "image1"
@@ -726,6 +726,10 @@ button:active{
         "image6"
         "image8"
         "image7";
+    }
+    
+    .a-side-settings{
+        margin-left: 88vw;
     }
 }
 
