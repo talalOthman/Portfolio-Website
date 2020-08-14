@@ -713,7 +713,7 @@ button:active{
         position: absolute;
         overflow: scroll;
         height: 80vh;
-        top: 5vh;
+        top: 15vh;
         left: 12vw;
         grid-template-columns: 41vh;
         grid-template-rows: repeat(8, 40vh);
