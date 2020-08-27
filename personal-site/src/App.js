@@ -12,6 +12,10 @@ function App() {
         <Navbar />
       </div>
 
+      <div className="app__containers">
+        
+      </div>
+
       <div className="app__footer">
         <Footer />
       </div>
