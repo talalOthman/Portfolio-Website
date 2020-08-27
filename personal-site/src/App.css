@@ -12,3 +12,9 @@ html{
   box-sizing: border-box;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(48, 79, 92);
+  transition: 0.5s;
+}

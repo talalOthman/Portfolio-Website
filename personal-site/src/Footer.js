@@ -7,10 +7,11 @@ function Footer() {
             <footer className="footer">
                 
                 <div className="footer__iconsContainer">
-                <a href="https://www.facebook.com/talal.othman.31"><i><FaFacebook/></i></a>
-                <a href="https://www.instagram.com/talal2820/"><i><FaInstagram /></i></a>
-                <a href="https://github.com/talalOthman"><i><FaGithub /></i></a>
+                <a href="https://www.facebook.com/talal.othman.31"><FaFacebook/></a>
+                <a href="https://www.instagram.com/talal2820/"><FaInstagram /></a>
+                <a href="https://github.com/talalOthman"><FaGithub /></a>
                 </div>
+
                 <p>Talal Othman @ 2020</p>
             </footer>
         
