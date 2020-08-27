@@ -1,0 +1,76 @@
+@keyframes navbarAnimation{
+    from{
+        height: 0px;
+    }
+
+    to{
+        height: 70px;
+    }
+}
+
+span{
+    color: #193441;
+    font-weight: 10;
+    transition: 0.5s;
+    font-size: 0px;
+    animation-name: navbarTextAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    
+    
+    
+}
+
+@keyframes navbarTextAnimation{
+    from{
+        font-size: 0px;
+    }
+
+    to{
+        font-size: 20px;
+    }
+ 
+}
+
+span:hover{
+    color: #EFF4F4 !important;
+    text-shadow: 0 0 15px rgba(253, 253, 253, 0.75), 0 0 10px rgba(253, 253, 253, 0.75);
+    transition: 0.5s;
+}
+
+nav li {
+    border: 0px solid red;
+    list-style-type: none;
+    margin: 1rem 2rem;
+    color: #3E606F;
+    transition: 0.6s;
+    
+    
+}
+
+
+nav a{
+    text-decoration: none;
+
+}
+
+nav a:visited{
+    color: #3E606F;
+}
+
+nav{
+    border: 0px solid red;
+    display: flex;
+    justify-content: center;
+    margin: 0 30vw;
+    padding: 0;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    background-color:  #3E606F;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    height: 70px;
+    animation-name: navbarAnimation;
+    animation-duration: 1s;
+    min-width: 200px;
+}
