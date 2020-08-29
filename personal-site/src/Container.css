@@ -9,8 +9,9 @@
     flex-direction: row-reverse;
     justify-content: space-evenly;
     border: 0px solid red;
-    margin: 17vh 20vw;
+    align-items: center;
     transition: 0.5s;
+    height: 100%;
     
 }
 
