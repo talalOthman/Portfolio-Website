@@ -1,7 +1,7 @@
 footer a{
     margin-left: 30px;
     margin-right: 20px;
-    font-size: 35px;
+    font-size: 40px;
     color: #193441;
     transition: 0.5s;
 
@@ -59,6 +59,5 @@ footer{
 
 footer p{
    color: #EFF4F4;
-   margin-top: 4px;
-
+   margin-top: -3vh;
 }
