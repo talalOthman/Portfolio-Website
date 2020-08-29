@@ -18,6 +18,27 @@ footer a:hover{
 }
 
 
+@keyframes footerAnimation{
+    from{
+        transform: translate3d(0, 0, 0);
+    }
+ 
+    to{
+        transform: translate3d(0, 100%, 0);
+    }
+ }
+ 
+ @keyframes reverse{
+    from{
+        transform: translate3d(0, 100%, 0);
+    }
+ 
+    to{
+        transform: translate3d(0, 0, 0);
+    }
+ }
+
+
 footer{
    background-color: #3E606F;
    border: 0px solid green;
@@ -26,30 +47,9 @@ footer{
    animation-name: footerAnimation;
    animation-fill-mode: forwards;
    animation-duration: 0.5s;
-   animation-play-state: paused;
    display: flex;
    flex-direction: column;
    padding: 10px;
-}
-
-@keyframes footerAnimation{
-   from{
-       transform: translate3d(0, 0, 0);
-   }
-
-   to{
-       transform: translate3d(0, 100%, 0);
-   }
-}
-
-@keyframes reverse{
-   from{
-       transform: translate3d(0, 100%, 0);
-   }
-
-   to{
-       transform: translate3d(0, 0, 0);
-   }
 }
 
 
