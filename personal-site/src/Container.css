@@ -1,0 +1,96 @@
+.container p{
+    font-size: 45px;
+    color: #304f5c;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    border: 0px solid red;
+    margin: 17vh 20vw;
+    transition: 0.5s;
+    
+}
+
+
+.container a{ 
+    text-decoration: none;
+    border-radius: 15%;
+    background-color: #7d898e;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity: 0;
+    animation-name: menuContainersAnimation;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes menuContainersAnimation{
+    from{
+        
+        opacity: 0;
+    }
+
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.container a:hover{
+    background-color: #aab9bf;
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 0px rgba(253, 253, 253, 0.75);
+    transition: 0.5s;
+}
+
+
+
+@keyframes disapperAnimation{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+@keyframes notDisapper{
+    
+
+    to{
+        margin-left: 31%;
+        
+    }
+}
+
+
+@keyframes notDisapperReverse{
+    
+
+    to{
+        margin-right: 31%;
+        
+    }
+}
+
+
+#Projects{
+    animation-fill-mode: forwards;
+}
+
+#Resume{
+    
+    animation-fill-mode: forwards;
+}
