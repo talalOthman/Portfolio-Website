@@ -45,11 +45,13 @@ footer{
    text-align: center;
    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
    animation-name: footerAnimation;
+   animation-play-state: paused;
    animation-fill-mode: forwards;
    animation-duration: 0.5s;
    display: flex;
    flex-direction: column;
    padding: 10px;
+
 }
 
 
